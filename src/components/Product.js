@@ -11,6 +11,7 @@ import { formatPrice } from '../helpers';
 
 const useStyles = makeStyles({
   root: {
+
   },
   media: {
     height: 170,
@@ -39,7 +40,7 @@ const Product = (props) => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-      <Button variant="contained" color="secondary">
+      <Button variant="contained" color="primary">
         Add to cart
       </Button>
       </CardActions>
