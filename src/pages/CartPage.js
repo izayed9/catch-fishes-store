@@ -4,6 +4,7 @@ const CartPage = () => {
     return (
         <div>
             <h1>This Your Cart</h1>
+        <p>hello</p>
         </div>
     )
 }
