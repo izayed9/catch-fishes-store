@@ -1,10 +1,12 @@
 import { Container, Grid } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
-import Product from '../components/Product';
 // import products from '../dummy-data/sample-fishes';
+import PaginationRounded from '../components/PaginationRounded';
+import Product from '../components/Product';
 
 const Products = () => {
   const [products, setData] = useState([]);
+
 
   const endpoint = "http://localhost:3300/fishes";
   useEffect(() => {
@@ -27,6 +29,7 @@ const Products = () => {
           </Grid>
         ))}
       </Grid>
+      <PaginationRounded />
     </Container>
   )
 }
