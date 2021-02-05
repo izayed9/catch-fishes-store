@@ -72,6 +72,22 @@
 			"desc": "With 21-25 two bite prawns in each pound, these sweet morsels are perfect for shish-kabobs.",
 			"price": 2250,
 			"status": "available"
+		},
+		{
+			"id": 10,
+			"name": "Mussels",
+			"image": "./images/mussels.jpg",
+			"desc": "The best mussels from the Pacific Northwest with a full-flavored and complex taste.",
+			"price": 425,
+			"status": "available"
+		},
+		{
+			"id": 11,
+			"name": "Jumbo Prawns",
+			"image": "./images/prawns.jpg",
+			"desc": "With 21-25 two bite prawns in each pound, these sweet morsels are perfect for shish-kabobs.",
+			"price": 2250,
+			"status": "available"
 		}
 	],
 	"comments": [

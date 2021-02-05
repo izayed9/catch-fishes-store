@@ -11,14 +11,19 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-const PaginationRounded = (props) => {
+const PaginationRounded = ({productPerPage, totalProducts, paginate}) => {
   const classes = useStyles();
-
+  const pageNumber =[]
+    for(let i=0; i<= Math.ceil(totalProducts / productPerPage); i++){
+        pageNumber.push(i)
+    }
 
     return (
-        <div className={classes.root}>
-            <Pagination count={10} variant="outlined" shape="rounded" />
-        </div>
+          <div className={classes.root}>
+            {pageNumber.map(number =>(
+               <Pagination key={number} count={number} variant="outlined" shape="rounded"  onClick={() => paginate(number)} />
+            ))}
+          </div>
     )
 }
 
